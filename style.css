@@ -1,0 +1,258 @@
+:root{
+    --color1 : #0C0C0C;
+    --color2: #481E14;
+    --color3:#9B3922;
+    --color4:#F2613F;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navBar{
+    background-color: var(--color3);
+    
+}
+.logo img{
+    width: 70px;
+}
+.logo span{
+    color: white;
+    margin-top:20px;
+
+}
+.logo{
+    display: flex;
+    gap: 10px;   
+}
+.menu{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 30px;
+}
+.subMenu{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: -50px;
+    
+}
+.subMenu:hover{
+    color: #0C0C0C;
+    
+}
+.logIn{
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: inset 2px 2px 7px black;
+    
+}
+.hoberMenu{
+    background-color: var(--color3);
+    display:none;
+    box-shadow: 2px 2px 6px black;
+}
+.hoberMenu ul {
+    padding: 0px;
+}
+.hoberMenu ul li{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    padding: 3px 7px;
+}
+.hoberMenu ul li:hover{
+    background-color: #f7f7f7;
+    color: var(--color3);
+}
+.subMenu:hover .hoberMenu{
+    display: block;
+    position: absolute;
+    z-index: 5;
+}
+#shiroNam{
+    display: flex;
+}
+label{
+    background-color: #007b5e;
+    padding: 0px 20px;
+    color: white;
+}
+#slider{
+    width: 100%;
+    height: 100px;
+}
+#header .image{
+    width: 100%;
+    height: 50vh;
+    background: url(image/202d00be0a0797e157e328c141bc94d0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#aalakaBord{
+   text-align: center;
+   display: ;
+   
+}
+#aalakaBord h2{
+   text-align: center;
+   
+
+}
+.aalakaBordDip{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+}
+.searchBtn{
+    border: 2px solid rgb(201, 9, 9);
+    padding: 5px 30px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.searchBtn:hover{
+    color: white;
+}
+.searchBtn::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    left: 0px;
+    top: 0px;
+    transform: translateX(-100%);
+    transition: .3s ;
+    z-index: -1;
+    
+}
+.searchBtn:hover::before{
+    transform: translateX(0%);
+}
+.PottoionSheba{
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+}
+.Pottoion h1{
+    text-align: center;
+    border-bottom: 2px solid #9B3922;
+}
+.PottoionShebaList{
+    text-align: center;
+    background-color: ;
+    box-shadow:  1px 1px 5px black;
+    padding: 30px;
+    flex-grow: 1;
+    border-radius: 0px 10px 0px 20px;
+ 
+}
+.PottoionShebaList:hover{
+    background-color: #007b5e;
+ 
+}
+.PottoionShebaList i{
+    font-size: 50px;
+    color: #9B3922;
+    padding-bottom: 5px;
+    position: relative;
+ 
+}
+
+#Profile{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    padding: 10px;
+}
+#Profile .cardDesign{
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.cardDesign .image{
+    background-color: #007b5e;
+}
+.cardDesign .image img{
+    width: 150px;
+}
+
+/* footer code start */
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #732901 !important;
+    padding: 10px;
+}
+#footer h5{
+    padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+#footer ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .2s all ease;
+}
+#footer ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.quick-links li a i{
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
